@@ -1,0 +1,9 @@
+body {
+    background: white url('images/background.jpg');
+}
+
+.thumbnail img {
+    max-height: 100%;
+    max-width: 100%;
+}
+

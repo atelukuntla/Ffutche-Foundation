@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donation</title>
+</head>
+<body>
+
+    <h2>Donation Form</h2><br>
+    <form method="post" action="{% url 'ffutche:donation_submit' %}">
+        {% csrf_token %}
+        <fieldset>
+            <br>
+            <legend>Donate for an Event</legend>
+            <label>Contributor Name:</label>
+            <br>
+            <input type="text" name="contributor_name">
+            <br><br>
+            <label>Phone Number:</label>
+            <br>
+            <input type="number" name="phone_number">
+            <br><br>
+            <label>Email ID:</label>
+            <br>
+            <input type="email" name="email_id">
+            <br><br>
+            <label>Contribution Type:</label>
+            <br>
+            <input type="text" name="contribution_type">
+            <br><br>
+            <label>Quantity:</label>
+            <br>
+            <input type="number" name="quantity">
+            <br><br>
+            <label>Value:</label>
+            <br>
+            <input type="number" name="value">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    <h3>{{ message }}</h3>
+
+</body>
+</html>
