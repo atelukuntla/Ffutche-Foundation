@@ -1,5 +1,6 @@
 {% load staticfiles %}
 
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
 <!-- link rel="stylesheet" type="text/css" href="{% static 'ffutche/css/bootstrap.min.css' %}" / -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
@@ -7,7 +8,7 @@
 <!-- script src=href="{% static 'ffutche/js/jquery-3.2.1.min.js' %}"></script -->
 <!-- script src=href="{% static 'ffutche/js/bootstrap.js' %}"></script -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{% static 'ffutche/style.css' %}" />
 <title>Ffutche Foundation</title>
 
@@ -24,20 +25,20 @@
             <div class="row">
                 <nav>
                     <ul class="nav nav-justified">
-                        <li><a href="#">Our Work</a></li>
-                        <li><a href="#">Gallaries</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"><span class="fa fa-cubes"></span>&nbsp; Our Work</a></li>
+                        <li><a href="#"><span class="fa fa-picture-o"></span>&nbsp; Gallaries</a></li>
+                        <li><a href="#"><span class="fa fa-university"></span>&nbsp; About Us</a></li>
+                        <li><a href="#"><span class="fa fa-phone-square"></span>&nbsp; Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- Middle 2 Items -->
             <div class="row">
                 <div class="col-md-9 text-center">
-                    <h2>Impacting Lives</h2>
+                    <h2>Impacting Lives!</h2>
                 </div>
                 <div class="col-md-3 text-center"><br>
-                    <a class="btn btn-primary" href="{% url 'ffutche:donation' %}" role="button">Donate</a>
+                    <a class="btn btn-primary" href="{% url 'ffutche:donation' %}" role="button"><span class="fa fa-leaf"></span>&nbsp; Donate</a>
                 </div>
             </div>
             <br>
@@ -47,13 +48,13 @@
                     <div id="navbar" class="navbar-collapse">
                         <form class="navbar-form navbar-right">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control" placeholder="Search...">
                             </div>
                             <button type="submit" class="btn btn-default">Submit</button>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#"><span class="fa fa-sign-in"></span>&nbsp; Sign In</a></li>
+                            <li><a href="{% url 'ffutche:register' %}"><span class="fa fa-user-plus"></span>&nbsp; Register</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -67,10 +68,10 @@
         <nav class="navbar navbar-inverse">
             <div id="navbar" class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{% url 'ffutche:index' %}">Home</a></li>
-                    <li><a href="#">Healthcare</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Development</a></li>
+                    <li><a href="{% url 'ffutche:index' %}"><span class="fa fa-home"></span>&nbsp; Home</a></li>
+                    <li><a href="#"><span class="fa fa-ambulance"></span>&nbsp; Healthcare</a></li>
+                    <li><a href="#"><span class="fa fa-graduation-cap"></span>&nbsp; Education</a></li>
+                    <li><a href="#"><span class="fa fa-wrench"></span>&nbsp; Development</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </nav>
@@ -165,7 +166,7 @@
             <div class="col-md-6">
                 <div class="row thumbnail text-center">
                     <h3>Latest News</h3>
-                    <br><a href="#">Trump is next US president</a><br>
+                    <br><a href="#">Donald Trump is next US president</a><br>
                     <br><a href="#">Syrican forces recapture Aleppo</a><br>
                     <br><a href="#">Senate votes on SCOTUS nominee</a><br>
                     <br><a href="#">The construction of world's biggest optical telescope has commenced in Chile</a><br>
